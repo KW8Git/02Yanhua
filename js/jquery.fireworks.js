@@ -94,7 +94,7 @@
             r = this.size / 2;
 
         var gradient = c.createRadialGradient(x, y, 0.1, x, y, r);
-        gradient.addColorStop(0.1, "rgba(0,0,0," + this.alpha + ")");//调整烟花颗粒的参数
+        gradient.addColorStop(0.1, "rgba(255,255,255," + this.alpha + ")");
         gradient.addColorStop(0.8, "hsla(" + this.color + ", 100%, 50%, " + this.alpha + ")");
         gradient.addColorStop(1, "hsla(" + this.color + ", 100%, 50%, 0.1)");
 
@@ -142,7 +142,7 @@
             var angle = Math.random() * Math.PI * 2;
 
             // emulate 3D effect by using cosine and put more particles in the middle
-            var speed = Math.cos(Math.random() * Math.PI / 2) * 10;
+            var speed = Math.cos(Math.random() * Math.PI / 2) * 15;
 
             particle.vel.x = Math.cos(angle) * speed;
             particle.vel.y = Math.sin(angle) * speed;

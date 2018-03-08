@@ -1,8 +1,8 @@
 var canvas = document.getElementById('canvas');
 	context = canvas.getContext('2d');
 	W = canvas.width = window.innerWidth;
- 	H = canvas.height = window.innerHeight*0.2;//位置
-	gridY = 2, gridX = 3;//颗粒数
+ 	H = canvas.height = window.innerHeight*0.6;//位置
+	gridY = 1, gridX = 1.5;//颗粒数
 
 	type = "ball";
 
